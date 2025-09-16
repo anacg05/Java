@@ -22,3 +22,4 @@ public class Exercicio1 {
         scan.close();
     }
 }
+
