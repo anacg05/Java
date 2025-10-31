@@ -4,7 +4,20 @@ public class Main {
 //    Colaborador ana = new Colaborador(92900000, "Ana C", "Desenvolvedora");
 //    System.out.println(ana.nome);
 
-        Mensalista mensalista = new Mensalista(91900010, "Emily", "Analista", 4000);
-        System.out.println(mensalista);
+//        Mensalista mensalista = new Mensalista(91900010, "Emily", "Analista", 4000);
+//        System.out.println(mensalista);
+
+
+//        Horista gabriel = new Horista(92907421, "Gabriel", "Operador de Manufatura", 240, 8.50);
+//        System.out.printf("O salário de Gabriel é: %.2fR$", gabriel.receberSalario());
+
+
+        Usuario usuario = new Usuario("Isabela", "12345678", "isabela@email.com");
+        usuario.autenticar();
+        usuario.concederAcessos();
+
+        UsuarioAdmin usuarioAdmin = new UsuarioAdmin("Murilo", "12345678", "murilo@email.com");
+        usuarioAdmin.autenticar();
+        usuarioAdmin.concederAcessos();
     }
 }
