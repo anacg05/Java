@@ -12,12 +12,26 @@ public class Main {
 //        System.out.printf("O salário de Gabriel é: %.2fR$", gabriel.receberSalario());
 
 
-        Usuario usuario = new Usuario("Isabela", "12345678", "isabela@email.com");
-        usuario.autenticar();
-        usuario.concederAcessos();
+//        Usuario usuario = new Usuario("Isabela", "12345678", "isabela@email.com");
+//        usuario.autenticar();
+//        usuario.concederAcessos();
 
-        UsuarioAdmin usuarioAdmin = new UsuarioAdmin("Murilo", "12345678", "murilo@email.com");
-        usuarioAdmin.autenticar();
-        usuarioAdmin.concederAcessos();
+//        UsuarioAdmin usuarioAdmin = new UsuarioAdmin("Murilo", "12345678", "murilo@email.com");
+//        usuarioAdmin.autenticar();
+//        usuarioAdmin.concederAcessos();
+
+
+
+
+        // ENUM
+
+        Prioridade prioridade = Prioridade.URGENTE;
+
+        switch (prioridade){
+            case BAIXA -> System.out.println("Chamado com prioridade baixa, resolver quando houver disponibilidade.");
+            case MEDIA -> System.out.println("Chamado com prioridade média, resolver assim que possível.");
+            case ALTA -> System.out.println("Chamado com prioridade alta, resolver o quanto antes.");
+            case URGENTE -> System.out.println("Chamado urgente, resolver imediatamente.");
+        }
     }
 }
